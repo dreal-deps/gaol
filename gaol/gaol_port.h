@@ -37,9 +37,7 @@
 #include "gaol/gaol_config.h"
 #include "gaol/gaol_limits.h"
 
-#if HAVE_FINITE
-#  include <cmath>
-#endif
+#include <cmath>
 
 // Alignment on an 'nbytes' bytes boundary
 #if defined(_MSC_VER)
@@ -193,11 +191,7 @@ namespace gaol {
    */
   INLINE int is_finite(double d)
   {
-#if HAVE_FINITE
-    return finite(d);
-#else
     return (d==d && d!=GAOL_INFINITY && d!=-GAOL_INFINITY);
-#endif
   }
 
 
