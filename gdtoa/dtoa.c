@@ -73,7 +73,7 @@ THIS SOFTWARE.
 #define Rounding Flt_Rounds
 #endif
 
-int Flt_Rounds;
+int Flt_Rounds = 1; /* round to the nearest by default, patched by ibex */
 
  char *
 dtoa

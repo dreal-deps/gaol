@@ -32,6 +32,7 @@
 
 #include <cmath>
 #include <iosfwd>
+#include <ios> /* for std::streamsize, patch from ibex */
 #include <string>
 #include <limits>
 #include "gaol/gaol_config.h"
